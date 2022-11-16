@@ -1,20 +1,21 @@
-import { useState } from 'react'
-
+import Header from "./components/Header"
+import NotificationButton from "./components/NotificationButton"
+import SalesCard from "./components/SalesCard"
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <div className="App">
+    <>
+      <Header />
+      <main>
+        <section id="sales">
+          <div className="dsmeta-container">
 
-      <div>
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
+            <SalesCard />
+          </div>
+        </section>
+      </main>
 
-      </div>
-
-    </div>
+    </>
   )
 }
 
